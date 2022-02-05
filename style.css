@@ -24,13 +24,19 @@ body{
                 inset -12px -12px 24px #98ffff;
 }
 
-
+::selection {
+    color: #B23A48;
+    background: rgba(19, 19, 19, 0)
+}
+p::selection{
+    color: #FED0BB;
+}
 
 
 h1{
     font-size: 50px;
     position: relative;
-    color: #fe9f72;
+    color: #ff8d57;
     margin-left: 95px;
     letter-spacing: 3px;
     font-family: 'Anton', sans-serif;
@@ -43,7 +49,7 @@ p{
 }
 @media only screen and (max-width: 600px) {
     .box{
-        background-color: #264354;
+        width: 90%;
     }
 
 }
