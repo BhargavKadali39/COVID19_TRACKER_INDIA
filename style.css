@@ -1,22 +1,26 @@
 body{
     background-color: #5FA8D3;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    align-content: space-between;
 }
 .box{
     margin-top: 50px;
-    width: 30%;
     display: flex;
+    width: 520px;
     flex-direction: column;
     align-items: center;
     border-radius: 50px;
     background: #5FA8D3;
-    box-shadow: inset 20px 20px 60px #518fb3,
-                inset -20px -20px 60px #6dc1f3;
+    box-shadow: inset 12px 12px 24px #264354,
+                inset -12px -12px 24px #98ffff;
 }
 h1{
+    font-size: 50px;
+    position: relative;
     color: aliceblue;
+    margin-left: 100px;
 }
 select,button,p{
     margin: 15px;
