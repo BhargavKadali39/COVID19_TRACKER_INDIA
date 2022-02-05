@@ -63,7 +63,7 @@ async function covidInfo(){
   const Dtotal= names['Andhra Pradesh']['districtData']['Vizianagaram']['delta']['confirmed'] ;
   const Drecovered = names['Andhra Pradesh']['districtData']['Vizianagaram']['delta']['recovered'] ;
   const Ddeceased= names['Andhra Pradesh']['districtData']['Vizianagaram']['delta']['deceased'] ;
-  document.getElementById('covidData').innerHTML = 'Covid Details <br/><br/>'+'Total :'+total+'<br/><br/>Active :'
-  +active+'<br/><br/>Recovered :'+recovered+'<br/><br/>Deceased :'+deceased+'<br/><br/>Delta variant details:<br/><br/>'+
+  document.getElementById('covidData').innerHTML = '<h2>Covid Details</h2> <br/><br/>'+'Total :'+total+'<br/><br/>Active :'
+  +active+'<br/><br/>Recovered :'+recovered+'<br/><br/>Deceased :'+deceased+'<br/><br/><h2>Delta variant details:</h2><br/><br/>'+
   'Total :'+Dtotal+'<br/><br/>Recovered :'+Drecovered+'<br/><br/>Deceased :'+Ddeceased;
 }
