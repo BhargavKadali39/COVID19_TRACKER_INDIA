@@ -9,13 +9,20 @@
 </head>
 <body>
     <div class="box">
-        <h1>covid tracker</h1>
-        <select id="arr"> <option value="select data">select data</option></select>
-        <button onclick="loadNames2()">Get District</button>
-        <select id="arr2"> <option value="select data">select District</option></select>
-        <button onclick="covidInfo()">Get Data</button>
+        <div class="interna">
+            <h1>covid tracker</h1>
+            <div>
+                <select id="arr"> <option value="select data">select data</option></select>
+                <button onclick="loadNames2()">Get District</button>
+            </div>
+            <div>
+                <select id="arr2"> <option value="select data">select District</option></select>
+                <button onclick="covidInfo()">Get Data</button>
+            </div>
+        </div>
         <p id="covidData"></p>
     </div>
+
 </body>
 <script src="script.js" defer></script>
 </html>
