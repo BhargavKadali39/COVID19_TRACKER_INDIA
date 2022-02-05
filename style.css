@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+*{
+    font-family: 'Jost', sans-serif;
+}
+
 body{
     background-color: #5FA8D3;
     display: flex;
@@ -16,13 +23,27 @@ body{
     box-shadow: inset 12px 12px 24px #264354,
                 inset -12px -12px 24px #98ffff;
 }
+
+
+
+
 h1{
     font-size: 50px;
     position: relative;
-    color: aliceblue;
-    margin-left: 100px;
+    color: #fe9f72;
+    margin-left: 95px;
+    letter-spacing: 3px;
+    font-family: 'Anton', sans-serif;
 }
 select,button,p{
     margin: 15px;
 }
+p{
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .box{
+        background-color: #264354;
+    }
 
+}
