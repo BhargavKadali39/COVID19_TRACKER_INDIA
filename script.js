@@ -55,14 +55,13 @@ async function covidInfo(){
   var select2 = document.getElementById('arr2');
   var text2 = select2.options[select2.selectedIndex].text;
   const dataa = Object.keys(names[text1]['districtData'][text2]);
-  console.log(dataa);
-  const total = names['Andhra Pradesh']['districtData']['Vizianagaram']['confirmed'] ;
-  const active = names['Andhra Pradesh']['districtData']['Vizianagaram']['active'] ;
-  const recovered = names['Andhra Pradesh']['districtData']['Vizianagaram']['recovered'] ;
-  const deceased = names['Andhra Pradesh']['districtData']['Vizianagaram']['deceased'] ;
-  const Dtotal= names['Andhra Pradesh']['districtData']['Vizianagaram']['delta']['confirmed'] ;
-  const Drecovered = names['Andhra Pradesh']['districtData']['Vizianagaram']['delta']['recovered'] ;
-  const Ddeceased= names['Andhra Pradesh']['districtData']['Vizianagaram']['delta']['deceased'] ;
+  const total = names[text1]['districtData'][text2]['confirmed'] ;
+  const active = names[text1]['districtData'][text2]['active'] ;
+  const recovered = names[text1]['districtData'][text2]['recovered'] ;
+  const deceased = names[text1]['districtData'][text2]['deceased'] ;
+  const Dtotal= names[text1]['districtData'][text2]['delta']['confirmed'] ;
+  const Drecovered = names[text1]['districtData'][text2]['delta']['recovered'] ;
+  const Ddeceased= names[text1]['districtData'][text2]['delta']['deceased'] ;
   document.getElementById('covidData').innerHTML = '<h2>Covid Details</h2> <br/><br/>'+'Total :'+total+'<br/><br/>Active :'
   +active+'<br/><br/>Recovered :'+recovered+'<br/><br/>Deceased :'+deceased+'<br/><br/><h2>Delta variant details:</h2><br/><br/>'+
   'Total :'+Dtotal+'<br/><br/>Recovered :'+Drecovered+'<br/><br/>Deceased :'+Ddeceased;
